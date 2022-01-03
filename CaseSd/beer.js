@@ -56,7 +56,7 @@ let cartItem = [];
 //     showTable(prot)
 // })()
 
-function showItem(){
+function showItem(prot){
     a = prot.map((prot)=>{
         return (
             `<div key=${prot.id} class="itemIndex">
@@ -71,7 +71,7 @@ function showItem(){
                                 <input type="number" id="addId${prot.id}" value="${prot.id}"/>
                             </div>
                             <img class="itemPhoto" src=${prot.photo}/>
-                            <div style="display: none"
+                            <div style="display: none">
                                 <input type="text" id="addPhoto${prot.id}" value="${prot.photo}"/>
                             </div>
                         
@@ -127,10 +127,11 @@ function cartTable(data){
         cart += 
                 `<div class="cartTable">
                     <div>${data[i].name}</div>
-                    <div><img src="${data[i].photo}"/></div>
-                    <div>Đơn giá: ${data[i].price}</div>
+                    <div><img class"photoCart" src="${data[i].photo} style="width: 100px; height="70px"/></div>
+                    <div>Đơn giá: ${data[i].price} VND</div>
                     <div>Số lượng:${data[i].quantity}</div>
-                    <div>Thành tiền: ${data[i].totalItem}</div>
+                    <div>Thành tiền: ${data[i].totalItem} VND</div>
+                    <button id="removeCart" onclick="remove()">Remove</button>
                 </div>`
                 totalCart += data[i].totalItem
     }
@@ -140,8 +141,7 @@ function cartTable(data){
     document.getElementById('addItem').innerHTML = cart;
 
 }
-function addItem(id) {
-    
+function addItem(id) {  
     let index = document.getElementById(`addId${id}`).value
     let name = document.getElementById(`addName${id}`).value;
     let photo= document.getElementById(`addPhoto${id}`).value;
@@ -156,6 +156,15 @@ function addItem(id) {
     cartItem.push(cart);
     cartTable(cartItem)
 } 
+
+function remove(){
+    let removeCart = document.getElementById('removeCart')
+    for (let i = 0; i < remove_cart.length; i++) {
+        removeCart.parentNode.remove(prot);
+            return false;
+        }
+    }
+
 
   
 
