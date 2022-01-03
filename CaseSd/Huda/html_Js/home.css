@@ -1,0 +1,67 @@
+
+.body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    position:fixed ;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+    width: 100vw;
+    height: 120px;
+}
+
+.logo{
+    flex: 3;
+    
+}
+.toolsBar{
+    flex: 7;
+    margin-top:40px;
+}
+.toolsBar > a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+.container > p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tab2{
+    display: flex;
+    background: #f3f6f5;
+}
+.tab2-text{
+    flex: 4;
+    margin-left: 20px;
+  
+}
+.tab2-text > p {
+    max-width: 250px;
+    font-size: 14px;
+}
+.tab2-img{
+    flex: 6;
+    margin-left: 20px;
+    width: 100px;
+    
+}
+.map{
+    width: 300px;
+    height: 200px;
+}
+.fbCaNhan{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    
+}
+.fbCaNhan > a{
+    text-decoration: none;
+    font-size: 20px;
+}

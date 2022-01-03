@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="beer.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-background">
+                <div class="logo">
+                    <img src="img/anh-logo.png" alt="" class="Logo" style="width:100% ; height: 120px;">
+                </div>
+                <div class="background">
+                    
+                    <img src="img/BackGround.png" alt="" class="backGround" style="width: 100%; height: 120px; float: right;">
+                    <div class="sidebar">
+
+                        <div class="toolsBar">
+                            <a href="http://127.0.0.1:5500/CaseSd/Huda/html_Js/home.html">Trang chủ</a>|
+                            <a href="http://127.0.0.1:5500/CaseSd/Huda/html_Js/beer.html">Sản Phẩm</a>|
+                            <a href="#">Liên Hệ</a>|
+                            <a href="#">Giới Thiệu</a>
+                        </div>
+                        
+                        <div class="cart">
+                            <form>
+                                <input oninput="searchItem()" id="searchWord" type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        
+                           
+                            
+                            <button class="open-button" onclick="openForm()">Giỏ hàng</button>
+
+                            <div class="form-popup" id="myForm">
+                            <form action="" class="form-container">
+                                <div id='addItem'>
+                                    
+                                </div>
+                            
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </header>
+    <div class="itemIndex">
+        <div class="container" id="item">
+    
+        </div>
+        <img src="" alt="">
+        <script src="beer.js"> </script>
+    </div>
+    <hr>
+    <!-- footer -->
+    
+</body>
+</html>
