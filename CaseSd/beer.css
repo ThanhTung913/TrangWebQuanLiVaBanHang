@@ -42,7 +42,9 @@
    margin-top: 150px;
    
 }
-
+.addItem {
+    display: inline-flex;
+}
 .itemPhoto{
     margin-left: 10px ;
     height: 170px;

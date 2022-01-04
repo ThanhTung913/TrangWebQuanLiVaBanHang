@@ -129,7 +129,7 @@ function cartTable(data){
                     <div>${data[i].name}</div>
                     <div><img class"photoCart" src="${data[i].photo} style="width: 100px; height="70px"/></div>
                     <div>Đơn giá: ${data[i].price} VND</div>
-                    <div>Số lượng:${data[i].quantity}</div>
+                    <div >Số lượng:${data[i].quantity}</div>
                     <div>Thành tiền: ${data[i].totalItem} VND</div>
                     <button id="removeCart" onclick="remove()">Remove</button>
                 </div>`
@@ -154,15 +154,13 @@ function addItem(id) {
     let totalItem = quantity * price;
     let cart = new Cart(index,name, photo,price,quantity,totalItem)
     cartItem.push(cart);
-    cartTable(cartItem)
+    cartTable(cartItem);
+    document.getElementById(`addQuantity${id}`).value = "";
 } 
 
 function remove(){
     let removeCart = document.getElementById('removeCart')
-    for (let i = 0; i < remove_cart.length; i++) {
-        removeCart.parentNode.remove(prot);
-            return false;
-        }
+    
     }
 
 
